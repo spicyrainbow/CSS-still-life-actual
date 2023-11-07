@@ -1,6 +1,22 @@
 <style>
+  
+  * { box-sizing: border-box; }
+  
   body {
-    background-color: #fff09b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     background-color: #fff09b;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    
   }
 
   .bottom {
@@ -48,19 +64,19 @@
   .kettlebody {
     width: 220px;
     /* Adjust the width as needed */
-    height: 0;
+    height: 200;
     /* Set the height to zero */
-    border-left: 50px solid transparent;
-    /* Half of the width */
-    border-right: 50px solid transparent;
-    /* Half of the width */
-    border-top: 280px solid #d15400;
+   
     position: absolute;
-    left: calc(50vw - 163px);
-    bottom: calc(50vh + 100px);
+    left: 0px;
+      top: 0px;
+/*     left: calc(50vw - 163px);
+    bottom: calc(50vh + 100px); */
     border-radius: 10%;
-    transform: translateY(300px)
-      /* background-image: linear-gradient(to bottom, #f4aa43 0%, #d15400 100%);     */
+    transform: translateY(300px);
+      background: orange;
+    transform: perspective(15px) rotateX(-3deg);
+      background-image: linear-gradient(to bottom, #f4aa4354 0%, #d15400 100%), radial-gradient(ellipse, #E6DB6F 0%, #c76ebc 100%);    
   }
 
 
@@ -72,8 +88,10 @@
     width: 250px;
     height: 150px;
     position: absolute;
-    left: calc(50vw - 130px);
-    top: calc(50vh - 130px);
+    left: 0px;
+    top: 0px;
+/*     left: calc(50vw - 130px); */
+/*     top: calc(50vh - 130px); */
     border-radius: 50%;
     background-image: linear-gradient(to bottom left, #f4aa43 0%, #d15400 100%);
 
@@ -90,6 +108,10 @@
   }
 </style>
 
-<div class="kettlecap"></div>
+
+<div class="frame">
+  <div class="kettlecap"></div>
 <div class="bottom"></div>
 <div class="kettlebody"></div>
+	<!-- ur HTML code goes here -->  
+</div>
