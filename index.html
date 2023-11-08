@@ -21,8 +21,7 @@
   }
 
    .cups{
-    
-    background: linear-gradient(0deg, hsl(239, 0%, 100%) 50%, hsl(242, 59%, 23%) 50%);
+    background: linear-gradient(0deg, hsl(239, 0%, 100%) 50%, hsl(242, 59%, 23%) 50%), linear-linear-gradient(to left, #ffffff 0%, #9b9ba1 100%);
     background-size: 100% 40%;
     width: 55px;
     height: 60px;
@@ -30,23 +29,23 @@
     position: absolute;
     right: 140px;
     bottom: 110px;
-    z-index: +1;
+    z-index: +2;
 }
-  .cuphandle{
-    
-    
+  
+  .cuphandle{ 
     width: 30px;
-    height: 45px;
+    height: 40px;
     position: absolute;
-    right: 200px;
-    top: 165px;
+    right: 180px;
+    bottom: 120px;
     border-radius: 50%;
     z-index: +1;
-    
-
-    
-    
+    border: 10px solid hsl(0, 0%, 96%);
+    background: transparent;
   }
+  
+  
+  
   
   
   .bottom {
@@ -232,14 +231,6 @@ transform: translateX(115px);
     border-radius: 0% 0% 30% 30%;
     background-image: linear-gradient(to right, #8b1d1d 0%, #bb342a 100%);
   }
- 
-  
- 
-    
-
-  
-    
-
 
   h1 {
     width: 110px;
@@ -263,6 +254,7 @@ transform: translateX(115px);
 </style>
 <div class="frame">
    <div class="cups"></div>
+  <div class="cup2"></div>
   <div class="cuphandle"></div>
   <div class="coffee"></div>
   <div class="coffee2"></div>
