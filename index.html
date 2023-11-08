@@ -20,6 +20,35 @@
 
   }
 
+   .cups{
+    
+    background: linear-gradient(0deg, hsl(239, 0%, 100%) 50%, hsl(242, 59%, 23%) 50%);
+    background-size: 100% 40%;
+    width: 55px;
+    height: 60px;
+    border-radius: 0% 0% 30% 30%;
+    position: absolute;
+    right: 140px;
+    bottom: 110px;
+    z-index: +1;
+}
+  .cuphandle{
+    
+    
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    right: 200px;
+    top: 165px;
+    border-radius: 50%;
+    z-index: +1;
+    
+
+    
+    
+  }
+  
+  
   .bottom {
     width: 110px;
     height: 80px;
@@ -43,8 +72,6 @@
 
     background-image: linear-gradient(to left, #ffffff 0%, #b1b5b0 100%);
     /*     transform: skewX(-20deg); */
-
-
     filter: blur(10px);
 
   }
@@ -54,26 +81,22 @@
     width: 220px;
     height: 70px;
     position: absolute;
-    top: 75%;
-    left: 13%;
+    top: 40px;
+    left: -100px;
     z-index: -1;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.1);
-    transform: skewX(10deg);
+    background-color: rgba(0, 30, 30, 0.37);
+    transform: skewX(300deg);
     filter: blur(5px);
   }
 
   .kettlebody {
     width: 130px;
-    /* Adjust the width as needed */
     height: 120;
-    /* Set the height to zero */
-
     position: absolute;
     left: 88px;
     top: 180px;
-    /*     left: calc(50vw - 163px);
-    bottom: calc(50vh + 100px); */
+    
     border-radius: 10% 0%;
     /*     transform: translateY(300px); */
     background: orange;
@@ -209,6 +232,13 @@ transform: translateX(115px);
     border-radius: 0% 0% 30% 30%;
     background-image: linear-gradient(to right, #8b1d1d 0%, #bb342a 100%);
   }
+ 
+  
+ 
+    
+
+  
+    
 
 
   h1 {
@@ -218,10 +248,22 @@ transform: translateX(115px);
     right: 190px;
     bottom: 100px;
     font-size: 25px;
-
   }
+  
+  h2 {
+    width: 110px;
+    height: 130px;
+    position: absolute;
+    right: 70px;
+    bottom: 95px;
+    font-size: 25px;
+    
+  }
+  
 </style>
 <div class="frame">
+   <div class="cups"></div>
+  <div class="cuphandle"></div>
   <div class="coffee"></div>
   <div class="coffee2"></div>
   <div class="handle"></div>
@@ -229,5 +271,5 @@ transform: translateX(115px);
   <div class="bottom"></div>
   <div class="kettlebody"></div>
   <h1> CAFE JUSTE </h1>
-  
+  <h2> CAFE JUSTE </h2>
   <!-- ur HTML code goes here -->
